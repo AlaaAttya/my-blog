@@ -67,11 +67,24 @@ defaults:
       layout: article
       sharing: true
       license: true
+      comment: true
       aside:
         toc: true
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+
+## => Comments
+##############################
+comments:
+  provider: "disqus"
+
+  ## Disqus
+  disqus:
+    shortname: "http-alaa-ninja"   
+
+jekyll:
+  environment: production
 
 # Exclude from processing.
 # The following items will not be processed, by default.
