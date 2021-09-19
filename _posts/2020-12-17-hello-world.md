@@ -7,5 +7,8 @@ layout: article
 categories:
   - Uncategorized
 key: asd  
+lang: ar
 ---
 Welcome to WordPress. This is your first post. Edit or delete it, then start writing!
+
+اهلا اهلا

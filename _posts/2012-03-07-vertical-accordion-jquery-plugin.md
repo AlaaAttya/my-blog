@@ -3,7 +3,7 @@ id: 42
 title: Vertical Accordion jQuery plugin
 date: 2012-03-07T15:26:02+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=42
 permalink: /?p=42
 publicize_results:

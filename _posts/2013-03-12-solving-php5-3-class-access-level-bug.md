@@ -3,7 +3,7 @@ id: 101
 title: Solving PHP5.3 properties access using get_object_vars() method
 date: 2013-03-12T13:42:20+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=101
 permalink: /?p=101
 publicize_twitter_user:

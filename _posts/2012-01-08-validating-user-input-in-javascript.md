@@ -3,7 +3,7 @@ id: 24
 title: Validating user input in JavaScript
 date: 2012-01-08T15:17:58+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=24
 permalink: /?p=24
 publicize_results:

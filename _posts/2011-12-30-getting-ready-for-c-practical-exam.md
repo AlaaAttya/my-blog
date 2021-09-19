@@ -3,7 +3,7 @@ id: 11
 title: 'Getting ready for C# practical exam'
 date: 2011-12-30T17:26:23+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=11
 permalink: /?p=11
 publicize_results:

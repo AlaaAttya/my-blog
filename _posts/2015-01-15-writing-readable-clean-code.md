@@ -3,7 +3,7 @@ id: 130
 title: writing readable clean code
 date: 2015-01-15T21:43:04+00:00
 author: alaa
-layout: post
+layout: article
 geo_public:
   - "0"
 publicize_linkedin_url:
@@ -39,29 +39,8 @@ One of the most things that annoy me is working with lots of dependencies within
 **Loops and control structures:**  
 loops, if statements and loops and even more if statements, ugf I cannot read such code, who&#8217;s the asshole who wrote that shittttttt!. Lots of us faced such problem when reading not well-written code. Using loops and control structures is a mixed blessing. And to avoid being an asshole. You have to care not to have lots and lots of nested loops and control flow items within your code. Suppose having such code
 
-<p style="text-align: center;">
-  <div class="dm-code-snippet dark default " style="background-color:#000;">
-    <div class="control-language language-php">
-      <div class="dm-buttons">
-        <div class="dm-buttons-left">
-          <div class="dm-button-snippet red-button">
-          </div>
-          
-          <div class="dm-button-snippet orange-button">
-          </div>
-          
-          <div class="dm-button-snippet green-button">
-          </div>
-        </div>
-        
-        <div class="dm-buttons-right">
-          <a id="dm-copy-raw-code"> <span class="dm-copy-text">Copy Code</span> <span class="dm-copy-confirmed" style="display:none">Copied</span> <span class="dm-error-message" style="display:none">Use a different Browser</span></a>
-        </div>
-      </div>
-      
-      <pre>
-					<code id="dm-code-raw" class="wrap">&lt;pre>&lt;/p>
-&lt;pre class="dm-pre-admin-side">foreach(............){
+```php
+foreach(............){
     if(..................){
         switch(......){
             case 1:
@@ -73,12 +52,7 @@ loops, if statements and loops and even more if statements, ugf I cannot read su
        }
     }
 }
-&lt;/pre>
-&lt;p>&lt;/pre></code>
-				</pre>
-    </div>
-  </div>
-</p>
+```
 
 This is a bad experience to have such a code. Having 3 nested indentations is enough to have a readable code. So please do not write that shitty eye-bleeding code that has lots and lots of nested blocks.
 

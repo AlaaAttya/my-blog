@@ -3,7 +3,7 @@ id: 98
 title: 2012 in my resolution
 date: 2013-02-28T02:08:12+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=98
 permalink: /?p=98
 publicize_twitter_user:

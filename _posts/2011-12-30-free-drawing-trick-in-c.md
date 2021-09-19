@@ -3,7 +3,7 @@ id: 16
 title: 'Free Drawing trick in C#'
 date: 2011-12-30T19:33:25+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=16
 permalink: /?p=16
 publicize_results:

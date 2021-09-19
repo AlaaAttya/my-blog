@@ -3,7 +3,7 @@ id: 124
 title: The missing art of exception handling
 date: 2014-04-13T10:41:12+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=124
 permalink: /?p=124
 publicize_twitter_url:

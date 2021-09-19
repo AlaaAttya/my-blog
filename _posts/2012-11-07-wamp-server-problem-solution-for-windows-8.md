@@ -3,7 +3,7 @@ id: 70
 title: WAMP server problem solution for windows 8
 date: 2012-11-07T19:06:30+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=70
 permalink: /?p=70
 publicize_twitter_user:
