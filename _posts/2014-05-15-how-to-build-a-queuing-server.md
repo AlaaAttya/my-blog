@@ -5,7 +5,6 @@ date: 2014-05-15T13:25:05+00:00
 author: alaa
 layout: article
 guid: http://alaaattya.wordpress.com/?p=126
-permalink: /?p=126
 geo_public:
   - "0"
 publicize_linkedin_url:
@@ -39,7 +38,7 @@ here’s a simple link that can demonstrate the processor pattern http://www.ope
 
 i’ve drew a simple chart that may simplify the whole idea.<figure id="attachment_127" aria-describedby="caption-attachment-127" style="width: 560px" class="wp-caption alignnone">
 
-[<img loading="lazy" src="http://alaa.ninja/wp-content/uploads/2014/05/queuing-server.png" alt="queuing server" width="560" height="467" class="size-full wp-image-127" srcset="http://alaa.ninja/wp-content/uploads/2014/05/queuing-server.png 773w, http://alaa.ninja/wp-content/uploads/2014/05/queuing-server-300x251.png 300w, http://alaa.ninja/wp-content/uploads/2014/05/queuing-server-768x642.png 768w" sizes="(max-width: 560px) 100vw, 560px" />](http://alaa.ninja/wp-content/uploads/2014/05/queuing-server.png)<figcaption id="caption-attachment-127" class="wp-caption-text">queuing server</figcaption></figure> 
+<img class="image image--xl" style="width: 100%" src="/assets/images/queuing-server.png"/>
 
 Hope i’ve helped you with this blog. If you have any questions just drop me a comment or ding me if you have my social account or mail.
 

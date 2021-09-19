@@ -52,7 +52,7 @@ foreach(............){
        }
     }
 }
-```
+``
 
 This is a bad experience to have such a code. Having 3 nested indentations is enough to have a readable code. So please do not write that shitty eye-bleeding code that has lots and lots of nested blocks.
 
