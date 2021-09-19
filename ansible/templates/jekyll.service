@@ -1,0 +1,21 @@
+
+
+[Unit]
+Description=Jekyll service
+After=syslog.target network.target
+
+[Service]
+User=root
+Type=simple
+WorkingDirectory=/home/deployer/my-blog
+ExecStart=/usr/local/bin/jekyll serve  --host 0.0.0.0 --watch --port 80
+ExecStop=/usr/bin/pkill -f jekyll
+Restart=always
+TimeoutStartSec=60
+RestartSec=60
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=jekyll
+
+[Install]
+WantedBy=multi-user.target network-online.target

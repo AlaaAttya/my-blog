@@ -1,0 +1,71 @@
+---
+
+- name: initiatlzing my jekyll blog
+  connection: ansible.netcommon.network_cli
+  hosts: nodes
+  gather_facts: false
+  tasks:
+
+  - name: Update apt packages
+    become: true
+    apt:
+      upgrade: no
+      update_cache: yes
+      cache_valid_time: 86400 #One day
+
+  - name: installing pre-reqs
+    apt:
+      name: "{{ item }}"
+      state: present
+    with_items:
+      - build-essential
+      - gcc
+      - git
+      - make
+      - ruby-full
+      - ruby-dev
+      - zlib1g-dev
+      - ruby-bundler
+    
+  - name: installing Ruby Gems
+    gem:
+      name: "{{ item }}"
+      state: present
+      user_install: no
+    with_items:
+      - bundler
+      - jekyll
+  
+  - name: add github to known hosts
+    ansible.builtin.shell:
+      cmd: ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+  
+  - name: clone my blog repository
+    ansible.builtin.git: 
+      repo: git@github.com:AlaaAttya/my-blog.git 
+      dest: /home/deployer/my-blog
+      key_file: ~/.ssh/id_rsa
+      force: true
+  
+  - name: ignore git file modifications
+    ansible.builtin.shell:
+      cmd: cd /home/deployer/my-blog && git config core.fileMode false
+  
+  - name: install dependencies
+    ansible.builtin.shell:
+      cmd: cd /home/deployer/my-blog && bundle install 
+  
+  - name: Serve with Systemd
+    template:
+      src: templates/jekyll.service
+      dest: /lib/systemd/system/jekyll.service
+      owner: root
+      group: root
+      mode: 0644
+  
+  - name: Restart jekyll
+    systemd:
+      name: jekyll
+      daemon_reload: yes
+      enabled: yes
+      state: restarted  
