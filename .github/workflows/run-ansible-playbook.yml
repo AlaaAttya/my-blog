@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run Ansible Playbook to deploy my blog
-      run: ansible-playbook --verbose ansible/deploy.yaml
+      run: ansible-playbook --verbose deploy.yaml
 
           
