@@ -6,6 +6,9 @@ on: push
 jobs:
   run-playbooks:
     runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: ansibl
     steps:
     - uses: actions/checkout@v2
     - name: Run Ansible Playbook to deploy my blog
