@@ -64,5 +64,9 @@
       mode: 0644
   
   - name: Restart jekyll
-    ansible.builtin.shell:
-      cmd: systemctl stop jekyll.service && systemctl start jekyll.service
+    systemd:
+      name: jekyll
+      daemon_reload: yes
+      enabled: yes
+      state: restarted  
+    ignore_errors: yes  
