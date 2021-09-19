@@ -3,7 +3,7 @@ id: 108
 title: Template Engines how to start
 date: 2013-06-27T22:58:24+00:00
 author: article
-layout: post
+layout: article
 guid: 108
 publicize_reach:
   - 'a:2:{s:7:"twitter";a:1:{i:1094482;i:183;}s:2:"wp";a:1:{i:0;i:7;}}'
@@ -49,7 +49,7 @@ for example suppose you need to define an observable for username
 
 ```js  
 function viewModel(){  
-this.username = ko.observable("Alaa Attya");//setting username observable value  
+	this.username = ko.observable("Alaa Attya");//setting username observable value  
 }
 
 var vm = new viewModel();  
