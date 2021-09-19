@@ -1,0 +1,6 @@
+[nodes]
+68.183.221.60
+
+[nodes:vars]
+ansible_connection=ssh
+ansible_user=deployer

@@ -3,7 +3,7 @@ id: 79
 title: 'solution for On &#8220;Enter Key&#8221; press event in javascript'
 date: 2012-12-15T03:25:50+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=79
 permalink: /?p=79
 publicize_reach:

@@ -28,9 +28,63 @@ twitter_username: AlaaAttya
 github_username:  AlaaAttya
 
 # Build settings
-theme: minima
+#theme: minima
+theme: jekyll-text-theme
+text_skin: default
+highlight_theme: default
+
+## => Plugins
+##############################
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+## => Paginate
+##############################
+paginate: 8
+paginate_path: /page:num # don't change this unless for special need  
+
+## => Sources
+##############################
+sources: # bootcdn (default), unpkg
+
+## => Sharing
+##############################
+sharing:
+  provider: "addthis"
+
+  ## AddThis
+  addthis:
+    id: "ra-6141044a78e39f52"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      sharing: true
+      license: true
+      comment: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_subscribe: true
+      pageview: true
+
+## => Comments
+##############################
+comments:
+  provider: "disqus"
+
+  ## Disqus
+  disqus:
+    shortname: "http-alaa-ninja"   
+
+jekyll:
+  environment: production
 
 # Exclude from processing.
 # The following items will not be processed, by default.

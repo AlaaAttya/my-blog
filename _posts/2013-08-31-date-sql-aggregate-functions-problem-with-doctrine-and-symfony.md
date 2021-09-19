@@ -3,7 +3,7 @@ id: 116
 title: Date SQL aggregate functions problem with doctrine and symfony
 date: 2013-08-31T16:05:50+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=116
 permalink: /?p=116
 publicize_twitter_user:

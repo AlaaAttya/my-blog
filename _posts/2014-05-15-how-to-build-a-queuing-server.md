@@ -3,7 +3,7 @@ id: 126
 title: How to build a queuing server
 date: 2014-05-15T13:25:05+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=126
 permalink: /?p=126
 geo_public:

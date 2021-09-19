@@ -3,7 +3,7 @@ id: 67
 title: Creating interactive forms using jQuery
 date: 2012-09-21T12:18:40+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=67
 permalink: /?p=67
 tagazine-media:

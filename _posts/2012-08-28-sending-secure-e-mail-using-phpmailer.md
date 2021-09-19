@@ -3,7 +3,7 @@ id: 61
 title: Sending secure e-mail using PHPMailer
 date: 2012-08-28T15:53:09+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=61
 permalink: /?p=61
 categories:

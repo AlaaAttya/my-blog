@@ -3,7 +3,7 @@ id: 86
 title: Joomla how to start with the CMS concept
 date: 2013-01-19T22:09:23+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=86
 permalink: /?p=86
 publicize_twitter_user:

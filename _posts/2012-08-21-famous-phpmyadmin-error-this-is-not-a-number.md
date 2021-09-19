@@ -3,7 +3,7 @@ id: 59
 title: Famous phpmyadmin error (this is not a number)
 date: 2012-08-21T07:14:11+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=59
 permalink: /?p=59
 tagazine-media:

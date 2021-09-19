@@ -3,7 +3,7 @@ id: 36
 title: using jQuery ajax with php
 date: 2012-01-29T13:16:48+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=36
 permalink: /?p=36
 publicize_results:

@@ -3,7 +3,7 @@ id: 76
 title: Using twitter authorization in Implementing twitter module for your website
 date: 2012-12-02T23:14:15+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=76
 permalink: /?p=76
 publicize_reach:

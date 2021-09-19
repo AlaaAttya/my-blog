@@ -3,7 +3,7 @@ id: 47
 title: Creating and hosting Facebook app.s (1)
 date: 2012-07-21T11:48:13+00:00
 author: alaa
-layout: post
+layout: article
 guid: http://alaaattya.wordpress.com/?p=47
 permalink: /?p=47
 tagazine-media:
