@@ -69,3 +69,4 @@
       daemon_reload: yes
       enabled: yes
       state: restarted  
+    ignore_errors: yes  
