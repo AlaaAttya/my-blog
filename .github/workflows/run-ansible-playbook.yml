@@ -1,0 +1,14 @@
+name: Run Ansible Playbooks
+
+on: push
+
+
+jobs:
+  run-playbooks:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Ansible Playbook to deploy my blog
+      run: ansible-playbook --verbose ansible/deploy.yaml
+
+          
