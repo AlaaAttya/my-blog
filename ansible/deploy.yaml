@@ -54,10 +54,6 @@
   - name: install dependencies
     ansible.builtin.shell:
       cmd: cd /home/deployer/my-blog && bundle install 
-  
-  - name: Set JEKYLL_ENV to production
-    ansible.builtin.shell: 
-      cmd: export JEKYLL_ENV=production
 
   - name: Serve with Systemd
     template:
@@ -68,6 +64,8 @@
       mode: 0644
   
   - name: Restart jekyll
+    environment:
+      JEKYLL_ENV: "production"
     systemd:
       name: jekyll
       daemon_reload: yes
