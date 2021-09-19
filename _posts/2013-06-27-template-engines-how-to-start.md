@@ -56,9 +56,9 @@ var vm = new viewModel();
 ko.applyBindings(vm);  
 ```
 
-You need to know that each observable tracks a specific data-bind. And data-binds has many types text, value, event,&#8230;. you can go and see the <a href="http://knockoutjs.com/documentation/" title="knockoutjs" target="_blank" rel="noopener">documentation</a>.If you wanna create an input text which you wanna track it&#8217;s values.
+You need to know that each observable tracks a specific data-bind. And data-binds has many types text, value, event,&#8230;. you can go and see the <a href="https://knockoutjs.com/documentation/introduction.html" title="knockoutjs" target="_blank" rel="noopener">documentation</a>.If you wanna create an input text which you wanna track it&#8217;s values.
 
-follow this example http://jsfiddle.net/AlaaAttya/PAZ82/1/
+follow this [example](http://jsfiddle.net/AlaaAttya/PAZ82/1/)
 
 That&#8217;s the big idea behind the template engines, hope you enjoyed.
 
