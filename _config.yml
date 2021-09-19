@@ -86,6 +86,17 @@ comments:
 jekyll:
   environment: production
 
+
+## => Analytics
+##############################
+analytics:
+  provider: "google"
+
+  ## Google Analytics
+  google:
+    tracking_id : "G-9V5QX7GWNX"
+    anonymize_ip: false # Anonymize IP tracking for Analytics  
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
