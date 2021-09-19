@@ -4,7 +4,7 @@ title: How to build a queuing server
 date: 2014-05-15T13:25:05+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=126
+guid: 126
 geo_public:
   - "0"
 publicize_linkedin_url:

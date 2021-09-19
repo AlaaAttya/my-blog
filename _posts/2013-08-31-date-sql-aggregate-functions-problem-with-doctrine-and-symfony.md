@@ -4,8 +4,7 @@ title: Date SQL aggregate functions problem with doctrine and symfony
 date: 2013-08-31T16:05:50+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=116
-permalink: /?p=116
+guid: 116
 publicize_twitter_user:
   - AlaaAttya
 tagazine-media:
@@ -32,29 +31,28 @@ which you can easily install via composer.json just add &#8216;&#8221;beberlei/D
 
 to use it you can just you the following snippet
 
-[code]
+```php
 
 public function getTodaysUsers($date) {
 
-$emConfig = $this->getEntityManager()->getConfiguration();  
-$emConfig->addCustomDatetimeFunction(&#8216;YEAR&#8217;, &#8216;DoctrineExtensions\Query\Mysql\Year&#8217;);  
-$emConfig->addCustomDatetimeFunction(&#8216;MONTH&#8217;, &#8216;DoctrineExtensions\Query\Mysql\Month&#8217;);  
-$emConfig->addCustomDatetimeFunction(&#8216;DAY&#8217;, &#8216;DoctrineExtensions\Query\Mysql\Day&#8217;);
+	$emConfig = $this->getEntityManager()->getConfiguration();  
+	$emConfig->addCustomDatetimeFunction(&#8216;YEAR&#8217;, &#8216;DoctrineExtensions\Query\Mysql\Year&#8217;);  
+	$emConfig->addCustomDatetimeFunction(&#8216;MONTH&#8217;, &#8216;DoctrineExtensions\Query\Mysql\Month&#8217;);  
+	$emConfig->addCustomDatetimeFunction(&#8216;DAY&#8217;, &#8216;DoctrineExtensions\Query\Mysql\Day&#8217;);
 
-$qb = $this->createQueryBuilder(&#8216;e&#8217;)  
-->select(&#8216;e&#8217;)  
-->where("DAY(e.registeredAt) = :day")  
-->andwhere("MONTH(e.registeredAt) = :month")  
-->andwhere("YEAR(e.registeredAt) = :year");
+	$qb = $this->createQueryBuilder(&#8216;e&#8217;)  
+	->select(&#8216;e&#8217;)  
+	->where("DAY(e.registeredAt) = :day")  
+	->andwhere("MONTH(e.registeredAt) = :month")  
+	->andwhere("YEAR(e.registeredAt) = :year");
 
-$qb->setParameter(&#8216;year&#8217;, $date->format(&#8216;Y&#8217;))  
-->setParameter(&#8216;month&#8217;, $date->format(&#8216;m&#8217;))  
-->setParameter(&#8216;day&#8217;, $date->format(&#8216;d&#8217;));
+	$qb->setParameter(&#8216;year&#8217;, $date->format(&#8216;Y&#8217;))  
+	->setParameter(&#8216;month&#8217;, $date->format(&#8216;m&#8217;))  
+	->setParameter(&#8216;day&#8217;, $date->format(&#8216;d&#8217;));
 
-return $qb->getQuery()  
-->getResult();  
+	return $qb->getQuery()->getResult();  
 }  
-[/code] 
+``` 
 
 It&#8217;s an example for finding the today&#8217;s registered users. Only you&#8217;ll have to place this method to your Entity&#8217;s repository and here you are ready to go
 
