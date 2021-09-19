@@ -5,7 +5,6 @@ date: 2014-04-13T10:41:12+00:00
 author: alaa
 layout: article
 guid: http://alaaattya.wordpress.com/?p=124
-permalink: /?p=124
 publicize_twitter_url:
   - http://t.co/ZjN4nSx3SP
 publicize_linkedin_url:
@@ -21,25 +20,25 @@ He was right about that and it&#8217;s also a good behavior and makes It easy fo
 
 For me as a web developer (who writes in php) exception handling saves me a lot of time spent of dangling if else to check every single case. Using exception handling makes it easy as putting the code which I suspect in a try block such as follows:
 
-`<br />
-try {<br />
-                $fbdata = $facebook->get($fbToken, $fbId);<br />
-            } catch (\FacebookApiException $e) {<br />
-                throw new Exception\AuthenticationFailedException('User exists but Facebook token invalid');<br />
-            }<br />
-` 
+```php
+try {
+    $fbdata = $facebook->get($fbToken, $fbId);<br />
+} catch (\FacebookApiException $e) {<br />
+    throw new Exception\AuthenticationFailedException('User exists but Facebook token invalid');<br />
+}
+```
 
 As an architect you should start designing classes to serve your custom exceptions.
 
 As a Symfony2 lover I&#8217;ll show you an example how to do it in Symfony by extending the existing exception classes:
 
-`<br />
-<?php</p>
-<p>namespace Smartizer\EventxBundle\Service\Exception;</p>
-<p>class AuthenticationFailedException extends LogicException<br />
-{<br />
-}<br />
-` 
+```php
+<?php
+namespace Smartizer\EventxBundle\Service\Exception;</p>
+class AuthenticationFailedException extends LogicException
+{
+}
+``` 
 
 as you may notice it&#8217;s pretty easy to get started and saves you alot of time spend on checking and dangling if else.
 
