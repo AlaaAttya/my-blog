@@ -65,4 +65,4 @@
   
   - name: Restart jekyll
     ansible.builtin.shell:
-      cmd: systemctl restart jekyll.service
+      cmd: systemctl stop jekyll.service && systemctl start jekyll.service
