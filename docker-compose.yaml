@@ -6,5 +6,7 @@ services:
     command: jekyll serve --watch --force_polling --verbose
     ports:
       - 4000:4000
+    environment:
+      JEKYLL_ENV: "production"  
     volumes:
       - .:/srv/jekyll

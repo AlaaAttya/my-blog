@@ -55,6 +55,10 @@
     ansible.builtin.shell:
       cmd: cd /home/deployer/my-blog && bundle install 
   
+  - name: Set JEKYLL_ENV to production
+    shell: "echo $JEKYLL_ENV"
+    environment:
+      JEKYLL_ENV: production
   - name: Serve with Systemd
     template:
       src: templates/jekyll.service
