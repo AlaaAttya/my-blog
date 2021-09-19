@@ -94,7 +94,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : "G-9V5QX7GWNX"
+    tracking_id : "G-FPK1KRB22T"
     anonymize_ip: false # Anonymize IP tracking for Analytics  
 
 # Exclude from processing.
