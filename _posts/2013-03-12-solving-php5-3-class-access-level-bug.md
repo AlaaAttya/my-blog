@@ -18,6 +18,7 @@ tags:
   - php bug issue
   - php5.3
   - web development
+key: solving-php-5-3-properties-access-101
 ---
 Hello PHPians 😀
 
