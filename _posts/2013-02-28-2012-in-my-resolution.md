@@ -4,12 +4,12 @@ title: 2012 in my resolution
 date: 2013-02-28T02:08:12+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=98
-permalink: /?p=98
+guid: 98
 publicize_twitter_user:
   - AlaaAttya
 categories:
   - Uncategorized
+key: 2012-in-my-resolution-98
 ---
 I actually i was reading <a href="https://twitter.com/shreef" title="@shreef" target="_blank" rel="noopener">@shreef</a>&#8216;s new blog post <a href="http://shreef.com/2013/02/late-new-years-resolution/" title="Late new year’s resolution" target="_blank" rel="noopener">Late new year’s resolution</a> and decided to write a blog post like it.
 
