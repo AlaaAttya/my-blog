@@ -17,6 +17,7 @@ categories:
 tags:
   - architect
   - clean code
+key: 130-writing-readable-clean-code
 ---
 How many times did you work with a codebase which you did not write?  
 How many times you were working on a codebase and a newly hired developer did not able to work on the same codebase with you?! (and you&#8217;ve got that comment &#8220;who&#8217;s the hell did write that code?! and it was you&#8230;it&#8217;s the very annoying situation&#8221;)
