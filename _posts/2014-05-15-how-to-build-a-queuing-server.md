@@ -21,6 +21,7 @@ tags:
   - processor
   - queue
   - server
+key: how-to-build-a-queuing-server-126  
 ---
 Today i’ll gonna talk about queuing server and how you can you it to optimize processing you big data.  
 First i would like to start with defining the queuing process itself. queuing is putting jobs or processes in a queue and execute it when its ready for executing (depending upon its position in the queue). You may use for the jobs that takes long time processing (and may even fail).  

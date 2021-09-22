@@ -13,6 +13,7 @@ publicize_twitter_user:
   - AlaaAttya
 categories:
   - Uncategorized
+key: the-missing-art-of-exception-handling-124
 ---
 First I would like to start by a quote I&#8217;ve learnt from <a href="https://www.facebook.com/ymohammad" target="_blank" rel="noopener">Dr.yasser farouk</a> (one of the doctor I&#8217;m proud to learned from) &#8216;as a developer it&#8217;s a shame to let the OS throw your code out of CPU because of division by zero or array out of bounds&#8217;
 

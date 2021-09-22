@@ -18,6 +18,7 @@ tags:
   - php
   - symfony
   - web development
+key: date-sql-aggregate-functions-problem-with-doctrine-and-symfony-116
 ---
 Hello GEEKs hope you are having a good day,
 

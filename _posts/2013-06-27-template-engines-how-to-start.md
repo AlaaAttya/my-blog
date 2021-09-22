@@ -16,6 +16,7 @@ categories:
 tags:
   - Front-end
   - MVVM
+key: template-engines-how-to-start-108
 ---
 Hello everyone,
 
