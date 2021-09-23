@@ -97,6 +97,8 @@ analytics:
     tracking_id : "G-FPK1KRB22T"
     anonymize_ip: false # Anonymize IP tracking for Analytics  
 
+googleAdSenseEnabled: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
