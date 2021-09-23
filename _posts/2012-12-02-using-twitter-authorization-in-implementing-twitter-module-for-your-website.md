@@ -4,8 +4,7 @@ title: Using twitter authorization in Implementing twitter module for your websi
 date: 2012-12-02T23:14:15+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=76
-permalink: /?p=76
+guid: 76
 publicize_reach:
   - 'a:2:{s:7:"twitter";a:1:{i:1094482;i:106;}s:2:"wp";a:1:{i:0;i:4;}}'
 publicize_twitter_user:
@@ -15,6 +14,7 @@ categories:
 tags:
   - login with twitter
   - twitter authorization
+key: using-twitter-authorization-76
 ---
 Hello guys,  
 Before i started my big love story with web development i saw many websites are using twitter accounts for user login instead of registering new account. Actually i was impressed how those guys hacked twitter and got the accounts and passwords of the user and then check for the validity of these accounts 😀
@@ -27,40 +27,42 @@ First you need to have a Twitter developer account, then create a twitter app to
 
 I have written a simple code that helps you to authorize users through little snippet.
 
-[code]  
+```php
 <?php
-
-include &#8216;twitter_lib/OAuth.php&#8217;;  
-include &#8216;twitter_lib/twitteroauth.php&#8217;;  
-include &#8216;twitter_lib/config.php&#8217;;
-
-/* creating twitter object  
-* TwitterOAuth: @params : CONSUMER\_KEY, CONSUMER\_SECRET  
-*  
-*/  
-$connection = new TwitterOAuth(CONSUMER\_KEY, CONSUMER\_SECRET);
-
-/* retrieving request tokens  
-* getRequestToken: @params : none  
-* @return : request token array contains &#8216;oauth_token&#8217;  
-* &#8216;oauth\_token\_secret&#8217;  
-* &#8216;oauth\_callback\_confirmed&#8217;  
-*  
-*/  
-$request_token = $connection->getRequestToken();
-
-/* creating authorization url using twitter connection object  
-* getAuthorizeURL: @params : oauth token returned from the request token array  
-*  
-*/  
-$auth\_url = $connection->getAuthorizeURL($request\_token[&#8216;oauth_token&#8217;]);
-
-//redirect user to the authorization url  
-header(&#8216;Location: &#8216;.$auth_url);
-
+ 
+    include 'twitter_lib/OAuth.php';
+    include 'twitter_lib/twitteroauth.php';
+    include 'twitter_lib/config.php';
+ 
+ 
+    /*  creating twitter object
+     *  TwitterOAuth: @params : CONSUMER_KEY, CONSUMER_SECRET
+     * 
+     */
+    $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET);
+     
+    /*  retrieving request tokens
+     *  getRequestToken: @params : none
+     *                   @return : request token array contains 'oauth_token'
+     *                                                          'oauth_token_secret' 
+     *                                                          'oauth_callback_confirmed'
+     * 
+     */
+    $request_token = $connection->getRequestToken();
+     
+     
+    /*  creating authorization url using twitter connection object
+     *  getAuthorizeURL: @params : oauth token returned from the request token array
+     *
+     */
+    $auth_url = $connection->getAuthorizeURL($request_token['oauth_token']);
+     
+    //redirect user to the authorization url
+    header('Location: '.$auth_url);
+     
+     
 ?>
-
-[/code]
+```
 
 As you can see i have included three files at the top of my script &#8216;OAuth.php&#8217; which is the core AOuth library, &#8216;twitteroauth.php&#8217; which is the twitter implementation for AOuth and finally &#8216;config.php&#8217; which holds your app configurations.
 
