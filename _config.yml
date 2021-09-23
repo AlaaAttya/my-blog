@@ -40,6 +40,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-gzip
 
 ## => Paginate
 ##############################
@@ -98,6 +99,12 @@ analytics:
     anonymize_ip: false # Anonymize IP tracking for Analytics  
 
 googleAdSenseEnabled: true
+
+gzip:
+  extensions:
+    - '.html'
+    - '.css'
+    - '.js'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
