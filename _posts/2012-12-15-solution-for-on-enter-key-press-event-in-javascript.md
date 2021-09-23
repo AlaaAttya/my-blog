@@ -4,8 +4,7 @@ title: 'solution for On &#8220;Enter Key&#8221; press event in javascript'
 date: 2012-12-15T03:25:50+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=79
-permalink: /?p=79
+guid: 79
 publicize_reach:
   - 'a:2:{s:7:"twitter";a:1:{i:1094482;i:115;}s:2:"wp";a:1:{i:0;i:4;}}'
 publicize_twitter_user:
@@ -18,6 +17,7 @@ tags:
   - javascript events
   - tricks
   - web development
+key: solution-for-on-enter-key-press-event-in-javascript-79
 ---
 Hello guys,  
 while working on a project i needed to add a text input which takes some action when the user press on the &#8220;enter key&#8221;, you know it&#8217;s something like facebook comment text input 😉
@@ -32,10 +32,9 @@ As you can see it seen a little snippet but it got me out of that problem 😀
 
 Here&#8217;s a snippet that can demonstrate what i&#8217;m talking about
 
-[code]  
-<input type="text" onkeydown="if (event.keyCode == 13) doSomeThing(paam1 , param2&#8230;..);" >
-
-[/code] 
+```js 
+<input type="text" onkeydown="if (event.keyCode == 13) doSomeThing(paam1 , param2.....);" >
+``` 
 
 Hope you&#8217;ve enjoyed  
 Thanks 🙂
