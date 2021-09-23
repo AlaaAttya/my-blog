@@ -70,6 +70,6 @@ All you need to do is to open the &#8216;config.php&#8217; and set the constants
 
 Here&#8217;s the full example source code download link.
 
-http://www.mediafire.com/?p17z236k0qda4nl
+[http://www.mediafire.com/?p17z236k0qda4nl](http://www.mediafire.com/?p17z236k0qda4nl)
 
 Hope you have enjoyed, thanks 🙂
