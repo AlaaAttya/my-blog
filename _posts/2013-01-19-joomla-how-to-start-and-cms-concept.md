@@ -4,8 +4,7 @@ title: Joomla how to start with the CMS concept
 date: 2013-01-19T22:09:23+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=86
-permalink: /?p=86
+guid: 86
 publicize_twitter_user:
   - AlaaAttya
 publicize_reach:
@@ -17,6 +16,7 @@ tags:
   - jooma
   - joomla how to start
   - web development
+key: joomla-how-to-start-with-the-cms-concept-86
 ---
 All of us heard about joomla. So my friends has asked me to write a blog about how to start with Joomla.
 
@@ -69,21 +69,21 @@ which holds any file associated with your module (even the php files)
 
 like that 
 
-[code]  
+```xml 
 <files>  
-<filename module="mod\_testmodule">mod\_testmodule.php</filename>  
-<filename>index.html</filename>  
-<filename>mod_testmodule.xml</filename>  
+	<filename module="mod\_testmodule">mod\_testmodule.php</filename>  
+	<filename>index.html</filename>  
+	<filename>mod_testmodule.xml</filename>  
 </files>  
-[/code]
+```
 
 -a PHP file that will do all the processing.  
 The name of this file must also have the prefix &#8220;mod_&#8221; followed by your module name or it will not be accessible.  
 This must include that line as the first line before any code is written 
 
-[code]  
-defined( &#8216;_JEXEC&#8217; ) or die;  
-[/code]
+```php  
+defined( '_JEXEC' ) or die; 
+```
 
 which means that no one can execute this file through the URL.
 
