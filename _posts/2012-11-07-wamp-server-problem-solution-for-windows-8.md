@@ -4,8 +4,7 @@ title: WAMP server problem solution for windows 8
 date: 2012-11-07T19:06:30+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=70
-permalink: /?p=70
+guid: 70
 publicize_twitter_user:
   - AlaaAttya
 twitter_cards_summary_img_size:
@@ -17,6 +16,7 @@ tags:
   - wamp
   - web developing
   - win 8 problems
+key: wamp-server-problem-70
 ---
 Hi guys hope you are having a good day.
 
@@ -28,7 +28,8 @@ To know who is listening on port 80 just run WAMP and have a left click on the t
 For windows 8 IIS 8 server is installed automatically and runs also automatically on windows start up. All you&#8217;ll need to do is ti disable it from running on start up and here is the solution
 
 launch control panel-> Administrative tools->services from the services search for a service called (World Wide Web Publishing Service) double click on it then set the start up type to disables then press apply the ok, restart your windows, run your WAMP server and every thing will be OK 🙂  
-![Word Wide Web Publishing Service](http://alaa.ninja/wp-content/uploads/2012/11/untitled.png) 
+
+<img class="image image--xl" style="width: 100%" src="/assets/images/wamp-issue.png"/>
 
 Hope you enjoyed  
 Thanks 🙂
