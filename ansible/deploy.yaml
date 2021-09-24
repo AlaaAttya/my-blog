@@ -47,7 +47,7 @@
       key_file: ~/.ssh/id_rsa
       force: true
   
-  - name: ignore git file modifications
+  - name: ignore git file mode modifications
     ansible.builtin.shell:
       cmd: cd /home/deployer/my-blog && git config core.fileMode false
   
@@ -55,18 +55,26 @@
     ansible.builtin.shell:
       cmd: cd /home/deployer/my-blog && bundle install 
 
-  - name: Serve with Systemd
+  - name: build static site
+    ansible.builtin.shell:
+      chdir: /home/deployer/my-blog
+      cmd: bundle exec jekyll build
+
+  - name: install nginx
+    apt: 
+      name: nginx 
+      state: latest      
+
+  - name: copy nginx cofigs
     template:
-      src: templates/jekyll.service
-      dest: /lib/systemd/system/jekyll.service
+      src: templates/nginx.cfg
+      dest: /etc/nginx/sites-available/default
       owner: root
       group: root
-      mode: 0644
-  
-  - name: Restart jekyll
-    systemd:
-      name: jekyll
-      daemon_reload: yes
-      enabled: yes
-      state: restarted  
-    ignore_errors: yes  
+      mode: 0644 
+
+  - name: restart nginx
+    become: true
+    ansible.builtin.shell:
+      cmd: systemctl status nginx
+    ignore_errors: yes          
