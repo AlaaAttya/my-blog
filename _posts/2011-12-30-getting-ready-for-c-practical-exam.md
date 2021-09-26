@@ -4,8 +4,7 @@ title: 'Getting ready for C# practical exam'
 date: 2011-12-30T17:26:23+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=11
-permalink: /?p=11
+guid: 11
 publicize_results:
   - 'a:1:{s:7:"twitter";a:1:{i:248646703;a:2:{s:7:"user_id";s:9:"AlaaAttya";s:7:"post_id";s:18:"152802756099452928";}}}'
 categories:

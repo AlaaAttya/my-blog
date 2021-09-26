@@ -4,8 +4,7 @@ title: using jQuery ajax with php
 date: 2012-01-29T13:16:48+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=36
-permalink: /?p=36
+guid: 36
 publicize_results:
   - 'a:1:{s:7:"twitter";a:1:{i:248646703;a:2:{s:7:"user_id";s:9:"AlaaAttya";s:7:"post_id";s:18:"163611560160407552";}}}'
 categories:

@@ -4,8 +4,7 @@ title: Vertical Accordion jQuery plugin
 date: 2012-03-07T15:26:02+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=42
-permalink: /?p=42
+guid: 42
 publicize_results:
   - 'a:1:{s:7:"twitter";a:1:{i:248646703;a:2:{s:7:"user_id";s:9:"AlaaAttya";s:7:"post_id";s:18:"177414815755677697";}}}'
 tagazine-media:

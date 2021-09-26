@@ -4,8 +4,7 @@ title: Validating user input in JavaScript
 date: 2012-01-08T15:17:58+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=24
-permalink: /?p=24
+guid: 24
 publicize_results:
   - 'a:1:{s:7:"twitter";a:1:{i:248646703;a:2:{s:7:"user_id";s:9:"AlaaAttya";s:7:"post_id";s:18:"156031905878388736";}}}'
 categories:

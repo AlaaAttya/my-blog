@@ -4,8 +4,7 @@ title: 'Free Drawing trick in C#'
 date: 2011-12-30T19:33:25+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=16
-permalink: /?p=16
+guid: 16
 publicize_results:
   - 'a:1:{s:7:"twitter";a:1:{i:248646703;a:2:{s:7:"user_id";s:9:"AlaaAttya";s:7:"post_id";s:18:"152834711679537153";}}}'
 categories:
