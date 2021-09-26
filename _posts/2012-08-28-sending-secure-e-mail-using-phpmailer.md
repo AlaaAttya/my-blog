@@ -4,10 +4,10 @@ title: Sending secure e-mail using PHPMailer
 date: 2012-08-28T15:53:09+00:00
 author: alaa
 layout: article
-guid: http://alaaattya.wordpress.com/?p=61
-permalink: /?p=61
+guid: 61
 categories:
   - Uncategorized
+key: sending-secure-e-mail-61
 ---
 Hi guys,
 
@@ -21,88 +21,97 @@ All You need to configure PHPMailer is to download the source files from this <a
 
 Then extract the files and copy these three files to the place you will include them
 
+```
 class.phpmailer.php  
 class.pop3.php  
 class.smtp.php
+```
 
 Then just include this class.phpmailer.php file and the configuration is done.
 
-[code]require_once &#8216;class.phpmailer.php&#8217;;[/code]
+`require_once 'class.phpmailer.php';`
 
 First you need to create and instance of the PHPMailer class as follows
 
-[code]$email = new PHPMailer();[/code]
+`$email = new PHPMailer();`
 
 To send email via &#8220;SMTP&#8221; you need to call this member function  
-[code]$email->IsSMTP();[/code]
+`$email->IsSMTP();`
 
 To send email via &#8220;qMail MTA&#8221; you need to call this member function  
-[code]$email->IsQmail();[/code]
+`$email->IsQmail();`
 
 To send email via &#8220;sendmail command&#8221; you need to call this member function  
-[code]$email->IsSendmail();[/code]
+`$email->IsSendmail();`
 
 Then if you need to enable email authentication you can call this member function  
-[code]$email->SMTPAuth = true;[code/]
 
-Some mail servers will require "SSL" for secure email sending (like Google) so you can call this member function to enable "SSL"  
-[code]$email->SMTPSecure = &#8216;ssl&#8217;;[/code]
+```php
+$email->SMTPAuth = true;
+ 
+// some mail servers will require "SSL" for secure email sending (like Google) so you can call this member function to enable "SSL"
+$email->SMTPSecure = 'ssl';
+```
 
 For &#8220;SMPT&#8221; you need to specify the &#8220;SMPT server&#8221; so you can call this function  
-[code]$email->Host = &#8216;smtp.gmail.com&#8217;;[/code]
+`$email->Host = 'smtp.gmail.com';`
 
 Actually PHPMailer uses the 465 port to send emails so you can specify it using this function  
-[code]$email->Port = 465;[/code]
+`$email->Port = 465;`
 
 In case if you had an error in sending email you can view this error using this function  
-[code]$email->ErrorInfo;[/code]
+`$email->ErrorInfo;`
 
 Here i had written a function that you can use to send emails using PHPMailer all you need is to pass it some usual arguments to specify the sender and the reciever emails, body, subject and sender name
 
-[code]
-
+```php
 <?php 
-
-require_once &#8216;class.phpmailer.php&#8217;;
-
-//setting up Authentication info.  
-$authMail = &#8216;YourMailGoesHere@gmail.com&#8217;;  
-$authPass = &#8216;Your Password Goes Here&#8217;;
-
-define(&#8216;mail&#8217; , $authMail);  
-define(&#8216;password&#8217; , $authPass);
-
-function sendEmail($to, $from, $from_Name, $body, $subject)  
-{  
-$email = new PHPMailer();
-
-$email->IsSMTP(); // enable SMTP to  
-$email->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only  
-$email->SMTPAuth = true; // authentication enabled  
-$email->SMTPSecure = &#8216;ssl&#8217;; // secure transfer enabled REQUIRED for GMail  
-$email->Host = &#8216;smtp.gmail.com&#8217;; //specifying SMTP mail server  
-$email->Port = 465;  
-$email->Username = mail;  
-$email->Password = password;  
-$email->SetFrom(mail, $from_Name);  
-$email->Subject = $subject;  
-$email->Body = $body;  
-$email->AddAddress(mail);  
-if(!$email->Send()) { //call $email->Send() to send emails  
-$error = &#8216;Mail error: &#8216;.$email->ErrorInfo;  
-echo $error;
-
-return false;  
-} else {  
-$error = &#8216;Message sent!&#8217;;  
-echo $error;
-
-return true;  
-}
-
-}
-
-?>  
-[/code]
+ 
+    require_once 'class.phpmailer.php';
+     
+        //setting up Authentication info.
+    $authMail = 'YourMailGoesHere@gmail.com';
+    $authPass = 'Your Password Goes Here';
+     
+    define('mail' , $authMail);
+    define('password' , $authPass);
+     
+    function sendEmail($to, $from, $from_Name, $body, $subject)
+    {
+        $email = new PHPMailer();
+         
+        $email->IsSMTP(); // enable SMTP to 
+        $email->SMTPDebug = 0;  // debugging: 1 = errors and messages, 2 = messages only
+        $email->SMTPAuth = true;  // authentication enabled
+        $email->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
+        $email->Host = 'smtp.gmail.com'; //specifying SMTP mail server
+        $email->Port = 465; 
+        $email->Username = mail;  
+        $email->Password = password;           
+        $email->SetFrom(mail, $from_Name);
+        $email->Subject = $subject;
+        $email->Body = $body;
+        $email->AddAddress(mail);
+        if(!$email->Send()) { //call $email->Send() to send emails
+            $error = 'Mail error: '.$email->ErrorInfo; 
+            echo $error;
+             
+            return false;
+        } else {
+            $error = 'Message sent!';
+            echo $error;
+             
+            return true;
+        }
+         
+         
+         
+    }
+     
+     
+     
+ 
+?>
+```
 
 Hope you enjoyed 🙂
