@@ -13,8 +13,9 @@ categories:
   - JavaScript
   - jQuery
 tags:
-  - Web design
-  - web developing
+  - web-design
+  - web-developing
+key: vertical-accordion-jquery-plugin-42
 ---
 while developing a website i face a problem that i need a side bar that need some way of tabs the requires viewing sub links when clicking on each tab,
 
@@ -34,66 +35,66 @@ The name of each slice must match as follows &#8220;va-slice va-slice-1&#8221; a
 
 here&#8217;s a simple html structure that may help.
 
-[code]  
-<html>  
-<head>  
-<title>Vertical Accrodion</title>  
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>  
-<script type="text/javascript" src="jquery.easing.1.3.js"></script>  
-<script type="text/javascript" src="jquery.vaccordion.js"></script>  
-<script type="text/javascript" src="jquery.mousewheel.js"></script>  
-<link href="style.css" rel="stylesheet" type="text/css" />  
-<link href=&#8217;http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1&#8242; rel=&#8217;stylesheet&#8217; type=&#8217;text/css&#8217; />  
-<link href=&#8217;http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2&#8242; rel=&#8217;stylesheet&#8217; type=&#8217;text/css&#8217;>  
-<script type="text/javascript">  
-$(function(){  
-$("#content").vaccordion({  
-visibleSlices : 3,  
-expandedHeight : 250,  
-animOpacity : 0.1,  
-contentAnimSpeed: 100  
-});  
-});  
-</script>  
-<style>  
-#fst{  
-height: 100px;  
-width: 100px;  
-background-color: red;  
-}
-
-#snd{  
-height: 100px;  
-width: 100px;  
-background-color:green;  
-}
-
-#trd{  
-height: 100px;  
-width: 100px;  
-background-color: black;  
-}  
-</style>
-
-</head>  
-<body>  
-<div id="content">  
-<div class="va-slice va-slice-1">  
-First tab  
-</div>  
-<div class="va-slice va-slice-2">  
-Second tab  
-</div>
-
-<div class="va-slice va-slice-3">  
-Third tab  
-</div>  
-</div>  
-</body>  
-</html>  
-[/code]
+```js
+<html>
+    <head>
+        <title>Vertical Accrodion</title>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="jquery.vaccordion.js"></script>
+        <script type="text/javascript" src="jquery.mousewheel.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
+        <script type="text/javascript">
+            $(function(){
+                $("#content").vaccordion({
+                    visibleSlices   : 3,
+                    expandedHeight  : 250,
+                    animOpacity     : 0.1,
+                    contentAnimSpeed: 100
+                });
+            });
+        </script>
+        <style>
+            #fst{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+            }
+ 
+            #snd{
+                height: 100px;
+                width: 100px;
+                background-color:green;
+            }
+ 
+            #trd{
+                height: 100px;
+                width: 100px;
+                background-color: black;
+            }
+        </style>
+ 
+    </head>
+    <body>
+        <div id="content">
+            <div class="va-slice va-slice-1">
+                First tab
+            </div>
+            <div class="va-slice va-slice-2">
+                Second tab
+            </div>
+ 
+            <div class="va-slice va-slice-3">
+                Third tab
+            </div>
+        </div>
+    </body>
+</html>
+```
 
 as you can see the .vaccordion has many option that may help you,  
 Finally there&#8217;s three files needed to get the job done  
@@ -102,6 +103,6 @@ Finally there&#8217;s three files needed to get the job done
 3-jquery.easing.1.3.js
 
 here the download link for these files  
-http://www.mediafire.com/?nbnayybznxya81m
+[http://www.mediafire.com/?nbnayybznxya81m](http://www.mediafire.com/?nbnayybznxya81m)
 
 hope you enjoyed 🙂</pre>
