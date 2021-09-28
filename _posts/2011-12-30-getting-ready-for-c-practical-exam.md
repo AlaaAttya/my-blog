@@ -9,6 +9,9 @@ publicize_results:
   - 'a:1:{s:7:"twitter";a:1:{i:248646703;a:2:{s:7:"user_id";s:9:"AlaaAttya";s:7:"post_id";s:18:"152802756099452928";}}}'
 categories:
   - College thoughts
+tags:
+  - 'college-thoughts' 
+key: Getting-ready-for-exam-11 
 ---
 3 days before my C# practical exam so i must get ready for that great event 😀 , also getting started to join the club 😀
 
