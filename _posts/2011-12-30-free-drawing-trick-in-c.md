@@ -10,8 +10,7 @@ publicize_results:
 categories:
   - 'C#'
 tags:
-  - move event
-  - 'c#'
+  - c-sharp
 key: free-drawing-trick-16    
 ---
 While studying C# ,one of my friends had an idea to write  a C# program that enables user to make a free drawing shapes using C# graphics
