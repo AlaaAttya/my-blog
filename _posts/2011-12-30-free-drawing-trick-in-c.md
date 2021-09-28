@@ -11,6 +11,8 @@ categories:
   - 'C#'
 tags:
   - move event
+  - 'c#'
+key: free-drawing-trick-16    
 ---
 While studying C# ,one of my friends had an idea to write  a C# program that enables user to make a free drawing shapes using C# graphics
 
@@ -22,53 +24,46 @@ Lest&#8217;s start coding,
 
 to get the first moue click position here we got two data members to store the first position,also w have a boolean data member to know if the mouse is still down or not
 
+```c#
 bool paintThis = false;  
 int x;  
 int y;
+```
 
 then in the mouse down event we get these two guys x&y of the first position and set the paintThis to true
 
-&nbsp;
-
+```c#
 private void Form1_MouseDown(object sender, MouseEventArgs e)  
 {  
-paintThis = true;  
-x = e.X;  
-y = e.Y;
-
+	paintThis = true;  
+	x = e.X;  
+	y = e.Y;
 }
+```
 
 then in the mouse up event we set the paintThis to false
 
-&nbsp;
-
+```c#
 private void Form1_MouseUp(object sender, MouseEventArgs e)  
 {  
 paintThis = false;  
 }
+```
 
-&nbsp;
+here in the mouse move event all the work will be done,we&#8217;ll calculate the width & the height of the rectangle we want to draw and start drawing when the mouse is down(actually when `paintThis=true`) at the first position the mouse was down (x & y)
 
-here in the mouse move event all the work will be done,we&#8217;ll calculate the width & the height of the rectangle we want to draw and start drawing when the mouse is down(actually when paintThis=true ) at the first position the mouse was down (x & y)
-
-&nbsp;
-
+```c#
 private void Form1_MouseMove(object sender, MouseEventArgs e)  
 {  
-if (paintThis)  
-{  
-Refresh();  
-Graphics gf = this.CreateGraphics();  
-gf.DrawRectangle(new Pen(Color.Black), x,y, e.X-x, e.Y-y);  
-}  
+	if (paintThis)  
+	{  
+		Refresh();  
+		Graphics gf = this.CreateGraphics();  
+		gf.DrawRectangle(new Pen(Color.Black), x,y, e.X-x, e.Y-y);  
+	}  
 }
+```
 
-&nbsp;
-
-here the source files    http://www.mediafire.com/?mbr69mixi76vimh
+[here the source files](http://www.mediafire.com/?mbr69mixi76vimh)
 
 hope you have enjoyed
-
-&nbsp;
-
-&nbsp;
