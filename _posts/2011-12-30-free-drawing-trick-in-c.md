@@ -46,7 +46,7 @@ then in the mouse up event we set the paintThis to false
 ```c#
 private void Form1_MouseUp(object sender, MouseEventArgs e)  
 {  
-paintThis = false;  
+	paintThis = false;  
 }
 ```
 
