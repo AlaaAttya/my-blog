@@ -10,6 +10,7 @@ tags:
     - BGP
     - networking
     - BGP-peering
+    - arabic-blogs
 key: facebook-down-dns-issue-arabic-131
 lang: ar
 ---
