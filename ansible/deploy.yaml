@@ -75,7 +75,7 @@
 
   - name: copy ads.txt
     ansible.builtin.copy:
-      src: /home/deployer/my-blog/ads.txt
+      src: files/ads.txt
       dest: /home/deployer/my-blog/_site/ads.txt  
 
   - name: restart nginx
