@@ -71,7 +71,12 @@
       dest: /etc/nginx/sites-available/default
       owner: root
       group: root
-      mode: 0644 
+      mode: 0644  
+
+  - name: copy ads.txt
+    ansible.builtin.copy:
+      src: /home/deployer/my-blog/ads.txt
+      dest: /home/deployer/my-blog/_site/ads.txt  
 
   - name: restart nginx
     become: true
