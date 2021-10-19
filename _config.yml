@@ -41,6 +41,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-gzip
+  - jekyll-seo-tag
 
 ## => Paginate
 ##############################
@@ -106,8 +107,19 @@ gzip:
     - '.css'
     - '.js'
 
-sass:
-  style: compressed
+social:
+  name: Alaa Attya
+  links:
+    - https://twitter.com/AlaaAttya
+    - https://www.facebook.com/alaa.attya/
+    - https://www.linkedin.com/in/alaaattya/
+    - https://github.com/AlaaAttya
+author:
+  name: Alaa Attya
+  twitter: AlaaAttya
+twitter:
+  username: AlaaAttya
+  card: summary_large_image  
 
 # Exclude from processing.
 # The following items will not be processed, by default.
