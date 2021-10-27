@@ -1,3 +1,4 @@
+---
 id: 132
 title: software development issues
 date: 2021-10-04T23:45:04+00:00
