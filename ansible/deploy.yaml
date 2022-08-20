@@ -34,7 +34,7 @@
       user_install: no
       version: "{{ item.version }}"
     with_items:
-      - { name: bundler, version: latest }
+      - { name: bundler, version: 2.3.20 }
       - { name: jekyll, version: 4.2.0 }
   
   - name: add github to known hosts
