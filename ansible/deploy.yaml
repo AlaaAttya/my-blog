@@ -29,12 +29,13 @@
     
   - name: installing Ruby Gems
     gem:
-      name: "{{ item }}"
+      name: "{{ item.name }}"
       state: present
       user_install: no
+      version: "{{ item.version }}"
     with_items:
-      - bundler
-      - jekyll
+      - { name: bundler, version: latest }
+      - { name: jekyll, version: 4.2.0 }
   
   - name: add github to known hosts
     ansible.builtin.shell:
