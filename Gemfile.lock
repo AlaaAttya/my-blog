@@ -97,7 +97,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.7.0)
-    webrick (1.7.0)
+    webrick (1.8.1)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -114,7 +114,7 @@ DEPENDENCIES
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
-  webrick (~> 1.7)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.2.24
