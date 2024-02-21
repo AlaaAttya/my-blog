@@ -37,28 +37,16 @@
       - { name: bundler, version: 2.3.20 }
       - { name: jekyll, version: 4.2.0 }
   
-  - name: add github to known hosts
-    ansible.builtin.shell:
-      cmd: ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
   
-  - name: clone my blog repository
-    ansible.builtin.git: 
-      repo: git@github.com:AlaaAttya/my-blog.git 
-      dest: /home/deployer/my-blog
-      key_file: ~/.ssh/id_rsa
-      force: true
-  
-  - name: ignore git file mode modifications
-    ansible.builtin.shell:
-      cmd: cd /home/deployer/my-blog && git config core.fileMode false
-  
+
   - name: install dependencies
     ansible.builtin.shell:
-      cmd: cd /home/deployer/my-blog && bundle install 
+      cmd: cd {{ workspace_path }} && bundle install 
 
   - name: build static site
     ansible.builtin.shell:
-      chdir: /home/deployer/my-blog
+      chdir: {{ workspace_path }}
       cmd: bundle exec jekyll build
 
   - name: install nginx
@@ -77,7 +65,7 @@
   - name: copy ads.txt
     ansible.builtin.copy:
       src: files/ads.txt
-      dest: /home/deployer/my-blog/_site/ads.txt  
+      dest: {{workspace_path }}/_site/ads.txt  
 
   - name: restart nginx
     become: true

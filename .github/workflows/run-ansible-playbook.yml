@@ -13,19 +13,10 @@ jobs:
       run:
         working-directory: ansible
     steps:
-    - uses: actions/checkout@v2
-    - name: List files in the repository
-      run: |
-        ls ${{ github.workspace }}
-        - run: echo "🍏 This job's status is ${{ job.status }}."
-    - name: Install SSH Key
-      uses: shimataro/ssh-key-action@v2
-      with:
-        key: ${{ secrets.SSH_PRIVATE_KEY }} 
-        known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
-    - name: Adding Known Hosts
-      run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts        
+    - uses: actions/checkout@v2 
     - name: Run Ansible Playbook to deploy my blog
+      with:
+        workspace_path: ${{ github.workspace }}
       run: ansible-playbook --verbose deploy.yaml
 
           
