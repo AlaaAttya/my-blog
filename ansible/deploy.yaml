@@ -38,7 +38,20 @@
       - { name: jekyll, version: 4.2.0 }
   
 
-  
+  - name: add github to known hosts
+    ansible.builtin.shell:
+      cmd: ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+  - name: clone my blog repository
+    ansible.builtin.git:
+      repo: git@github.com:AlaaAttya/my-blog.git
+      dest: "{{ lookup('env', 'WORKSPACE_DIR') }}"
+      force: true
+      accept_hostkey: yes
+
+  - name: ignore git file mode modifications
+    ansible.builtin.shell:
+      cmd: cd "{{ lookup('env', 'WORKSPACE_DIR') }}" && git config core.fileMode false
 
   - name: install dependencies
     ansible.builtin.shell:
