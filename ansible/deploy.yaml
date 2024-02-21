@@ -42,11 +42,11 @@
 
   - name: install dependencies
     ansible.builtin.shell:
-      cmd: cd {{ workspace_path }} && bundle install 
+      cmd: cd {{ lookup('env', 'WORKSPACE_DIR') }} && bundle install 
 
   - name: build static site
     ansible.builtin.shell:
-      chdir: {{ workspace_path }}
+      chdir: {{ lookup('env', 'WORKSPACE_DIR') }}
       cmd: bundle exec jekyll build
 
   - name: install nginx
@@ -65,7 +65,7 @@
   - name: copy ads.txt
     ansible.builtin.copy:
       src: files/ads.txt
-      dest: {{workspace_path }}/_site/ads.txt  
+      dest: {{ lookup('env', 'WORKSPACE_DIR') }}/_site/ads.txt  
 
   - name: restart nginx
     become: true
