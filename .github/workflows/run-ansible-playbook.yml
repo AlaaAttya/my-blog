@@ -23,7 +23,7 @@ jobs:
 #      run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts        
     - name: Run Ansible Playbook to deploy my blog
       env:
-        WORKSPACE_DIR: ${{ github.workspace }}
+        WORKSPACE_DIR: "/home/deployer/my-blog"
       run: ansible-playbook --verbose deploy.yaml
 
           
