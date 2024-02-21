@@ -65,7 +65,7 @@
   - name: copy ads.txt
     ansible.builtin.copy:
       src: files/ads.txt
-      dest: "{{ lookup('env', 'WORKSPACE_DIR') }}"/_site/ads.txt  
+      dest: "{{ lookup('env', 'WORKSPACE_DIR') }}/_site/ads.txt " 
 
   - name: restart nginx
     become: true
