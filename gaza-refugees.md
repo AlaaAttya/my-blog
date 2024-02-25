@@ -191,6 +191,12 @@ table {
         </td>
         <td></td>
     </tr>
+    <tr>
+        <td>
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/almaghari-family/widget/medium?sharesheet=CAMPAIGN_PAGE"></div>
+        </td>
+        <td></td>
+    </tr>
 </table>
 
 <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
